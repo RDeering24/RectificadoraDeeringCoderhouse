@@ -253,9 +253,6 @@
       .opciones {
           grid-template-columns: 1fr;
       }
-      .mapouter h2 {
-          background-color: red;
-      }
   }
   
   @media (max-width: 768px) {
@@ -331,6 +328,7 @@
   @media (max-width: 576px) {
       .menu-btn {
           display: block;
+          margin-right: 10px;
       }
       .menu-btn:hover {
           opacity: 0.5;
@@ -364,13 +362,10 @@
           transform: translateX(-20px);
       }
       .nav-main ul.nav-menu-right {
-          margin-right: 50px;
+          margin-right: 20px;
       }
       .cartas-servicios {
           grid-template-columns: 1fr;
-      }
-      .historia_maquinas {
-          background-color: gainsboro;
       }
       section {
           padding: 20px;
