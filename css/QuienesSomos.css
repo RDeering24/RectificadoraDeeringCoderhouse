@@ -325,9 +325,9 @@ footer {
         transition: transform 2s ease-in-out;
     }
     .nav-main ul.nav-menu li {
-        padding: 40px;
+        padding: 20px;
         border-bottom: #ccc solid 1px;
-        font-size: 24px;
+        font-size: 14px;
     }
     .nav-main ul.nav-menu li:last-child {
         border-bottom: 0;

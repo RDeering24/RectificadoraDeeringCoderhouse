@@ -297,7 +297,7 @@
           transform: translateX(-20px);
       }
       .nav-main ul.nav-menu-right {
-          margin-right: 50px;
+          margin-right: 80px;
       }
       main {
           grid-template-columns: 1fr;
