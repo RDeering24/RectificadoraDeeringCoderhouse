@@ -173,8 +173,8 @@
         .menu-btn:hover {
             opacity: 0.5;
         }
-        a {
-            color: #fff;
+        .nav-main ul.nav-menu li a {
+            color: #ffffff;
         }
         .nav-main ul.nav-menu {
             display: block;
@@ -182,10 +182,10 @@
             top: 0;
             left: 0;
             background: #3d4550;
-            width: 100%;
-            height: 100%;
+            width: 40%;
+            height: 80%;
             border-right: #ccc 1px solid;
-            opacity: 1.5;
+            opacity: 0.9;
             padding: 30px;
             transform: translateX(-500px);
             transition: transform 2s ease-in-out;
@@ -221,11 +221,17 @@
             margin-bottom: 30px;
         }
         .social {
-            position: relative;
-            left: 100px;
+            position: hidden;
+            left: 200px
+        }
+        .fab {
+            color: blue;
         }
         .opciones {
             grid-template-columns: 1fr;
+        }
+        .mapouter h2 {
+            background-color: red;
         }
     }
     
@@ -246,10 +252,10 @@
             top: 0;
             left: 0;
             background: #3c3d3f;
-            width: 100%;
-            height: 100%;
+            width: 40%;
+            height: 50%;
             border-right: #ccc 1px solid;
-            opacity: 1.5;
+            opacity: 0.9;
             padding: 30px;
             transition: transform 2s ease-in-out;
         }
@@ -294,6 +300,9 @@
         .historia {
             margin-bottom: 30px;
         }
+        .social {
+            position: relative;
+        }
     }
     
     @media (max-width: 576px) {
@@ -312,10 +321,10 @@
             top: 0;
             left: 0;
             background: #32363a;
-            width: 20%;
-            height: 100%;
+            width: 40%;
+            height: 40%;
             border-right: #ccc 1px solid;
-            opacity: 1.5;
+            opacity: 0.9;
             padding: 30px;
             transform: translateX(-500px);
             transition: transform 2s ease-in-out;
@@ -356,5 +365,9 @@
         .menu_horarios {
             position: relative;
             left: 90px;
+        }
+        .social {
+            position: relative;
+            left: 100px;
         }
     }
