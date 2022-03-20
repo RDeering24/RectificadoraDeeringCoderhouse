@@ -325,6 +325,15 @@
        .social {
            position: relative;
        }
+       .cartas-servicios div {
+           border-right: 1px solid black;
+       }
+       .cartas-servicios {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 35px;
+           margin: 20px;
+       }
    }
    
    @media (max-width: 576px) {
