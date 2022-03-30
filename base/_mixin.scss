@@ -1,0 +1,6 @@
+@mixin colores($colors,$align,$bg) {
+    color: $colors;
+    align-content: $align;
+    background-color:$bg;
+}
+

@@ -1,0 +1,16 @@
+@import"../base/mixin";
+
+/*
+footer{
+    background: #2f3648;
+    color: #616161;
+    text-align: center;
+    grid-area: footer;
+
+    
+}
+*/
+footer{
+    grid-area: footer;
+    @include colores(#616161,center,#2f3648);
+}

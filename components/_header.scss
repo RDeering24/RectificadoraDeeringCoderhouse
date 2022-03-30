@@ -1,0 +1,44 @@
+@import "../base/maps";
+@import"../base/extends";
+
+
+header{
+    grid-area: header;
+    height: 100px;
+    
+    
+    .nav-main  {
+        font-size: 17px;
+        @extend %disposicion;
+        height: 60px;
+        padding: 20px 0;
+       
+        .nav-brand {
+            width: 200px;
+        }
+
+      ul{
+        display: map-get($header , vista );
+        list-style: none;
+
+          li{
+            padding: 50px;
+            
+          
+            a {
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 2px solid map-get($header, bg-color );
+                   
+                }
+             }
+          }
+      }
+      hr {
+        margin: 10px 10px 0;
+    }
+      
+        
+    }
+    
+}

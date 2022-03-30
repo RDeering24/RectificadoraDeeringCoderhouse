@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
     /* Navegacion */
-    
+
     .nav-main {
         font-size: 17px;
         display: flex;
@@ -7,6 +13,7 @@
         align-items: center;
         height: 60px;
         padding: 20px 0;
+        
     }
     
     .nav-brand {
@@ -25,10 +32,8 @@
         border-bottom: 2px solid black;
     }
     
-    hr {
-        margin: 10px 10px 0;
-    }
-    
+
+
     a {
         text-decoration: none;
         /*quita el subrallado*/
@@ -36,6 +41,18 @@
     
     ul {
         list-style: none;
+    }
+
+    /*boton responsivo*/
+
+    .menu-btn {
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 30px;
+        z-index: 2;
+        font-size: 24px;
+        display: none;
     }
     /*social*/
     
@@ -46,10 +63,13 @@
         width: 40%;
     }
     
-    .social p {
+    .social h3 {
         text-align: center;
         font-size: 30px;
-        margin-bottom: 20px;
+        margin-top: 50px;
+        padding: 20px;
+        font-family: 'Quicksand', sans-serif;
+        
     }
     
     .links {
@@ -61,63 +81,122 @@
     }
     
     .links a {
-        margin: 0 30px;
+        margin: 0 50px;
     }
     
     .links a i {
         font-size: 3rem;
     }
-    
-    .frase1 {
-        color: #fff;
-    }
-    
-    .frase2 {
-        color: #ffffff;
-    }
-    
-    .menu-btn {
-        position: absolute;
-        cursor: pointer;
-        top: 45px;
-        right: 30px;
-        z-index: 2;
-        font-size: 24px;
-    }
-    
+
     header {
         grid-area: header;
         height: 100px;
     }
     
-    .principal {
+    .slider {
         width: 100%;
         height: 500px;
-        margin: auto;
-        background: url('../img/principal.png')no-repeat center center/cover;
-        padding-bottom: 50px;
-        margin-bottom: 20px;
+        overflow: hidden;
         grid-area: principal;
     }
-    
-    main {
-        grid-area: main;
+
+    .slider ul{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        animation: cambio 20s infinite alternate linear;
+        width: 400%;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider img{
+        width: 100%;
+        height: 85%;
     }
     
-    main img {
+    @keyframes cambio{
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
+
+    .titulo{
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        border-bottom: #d8cfcf 1px solid;
+        align-items: flex-end;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+
+    .titulo h1{
+    
+        font-family: 'Quicksand', sans-serif;
+    }
+    .servicios {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        background-color: #2f3648;
+        
+    }
+    
+    .servicios img {
         width: 400px;
         height: 300px;
+        transition: transform .5s;
+        margin-left: 40px;
+        opacity: 0.5;
+       
+        
     }
     
-    section {
+    .servicios img:hover{
+          transform:translateY(-20px);
+          
+    }
+    
+    .servicios h2{
+        padding: 20px;
+        margin-left: 100px;
+        color: #fff;
+        position: initial;
+    
+    }
+    .servicios p{
+        position: relative;
+        bottom: 40px;
+        color: #fff;
+        width: 80%;
+        margin-left: 50px;
+        
+    }
+
+    
+    .logos-marca {
         grid-area: section;
+        width: 75%;
+        padding: 20px;
+        margin-left: 150px;
+        border-bottom: #2f3648 1px solid;
+        border-top: #2f3648 1px solid;
+        display: flex;
+        margin-top: 50px;
     }
     
-    section img {
+    .logos-marca img {
         width: 100%;
+    
     }
     
     article {
@@ -149,16 +228,170 @@
         opacity: .6;
     }
     
-    footer {
-        background: #2f3648;
-        color: #616161;
-        text-align: center;
-        grid-area: footer;
+    
+    .maquinas{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        
     }
+
+    .maquinas div{
+        
+        text-align: center;
+        padding-left: 10px;
+        
+    }
+    .historia_maquinas img {
+        width: 200px;
+        height: 200px;
+        background-color: gainsboro;
+    }
+    
+    .historia_maquinas h2 {
+        text-align: center;
+        padding: 40px;
+        font-size: 30px;
+    }
+    
+    .historia_descripcion h2 {
+        text-align: left;
+        padding: 10px;
+    }
+    
+    .historia_descripcion p {
+        text-align: left;
+    }
+    
+    .contacto h2 {
+        padding: 20px;
+    }
+    
+    .contacto p {
+        padding: 10px;
+    }
+    
+    .contacto i {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    
+    .menu_contacto {
+        border: 2px solid gray;
+        width: 350px;
+        position: relative;
+        left: 200px;
+    }
+    
+    .menu_horarios p {
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .menu_horarios i {
+        margin-top: 40px;
+        font-size: 2rem;
+    }
+    
+    .inferior {
+        width: 90%;
+        margin-left: 60px;
+    }
+    
+    .menu_horarios {
+        border: 2px solid gray;
+        width: 350px;
+        position: relative;
+        left: 200px;
+        margin-top: 80px;
+    }
+
+   .secciones{
+       grid-area: secciones;
+       display: flex;
+       justify-content:space-between;
+       align-items:center;
+       color: #fff;
+       font-size: 20px;
+       background: #3d4550;
+       padding: 40px;
+       background-image: url(../img/puesta\ en\ marcha.jpg);
+       
+    
+       
+   }
+   
+
+   .nosotros{
+       
+       width: 300px;
+   }
+
+   .nosotros p{
+       
+    padding: 5px 5px 0;
+    }
+
+    .nosotros h4{
+        margin-bottom: 20px;
+    }
+   
+   .contacto{
+       
+       width: 300px;
+       margin-left: 80px;
+   }
+
+   .contacto h5{
+    padding: 20px 20px 0;
+   }
+   .secciones a{
+       color: #fff;
+   }
+   .secciones a:hover{
+    border-bottom: 2px solid black ;
+}
+   
+   .sections{
+       
+       width: 300px;
+       margin-left: 150px;
+       
+   }
+   
+   .sections a{
+    
+      display: inline-block;
+      padding: 10px 10px 0;
+   }
+   
+
+   footer {
+    background: #fff;
+    color: #141313;
+    text-align: right;
+    grid-area: footer;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer img{
+    width: 100px;
+    height: 50px;
+    margin-right: 50px;
+  
+    
+    
+
+}
+
     
     .container-grid {
         display: grid;
-        grid-template-areas: "header header header""principal principal principal" "main main main" "main main main""section section section""article article article ""div div div" "footer footer footer";
+        grid-template-areas: "header header header""principal principal principal""titulo titulo titulo" "main main main" "main main main""section section section""article article article ""div div div""secciones secciones secciones" "secciones secciones secciones""footer footer footer";
     }
     
     .container-grid {
@@ -182,13 +415,13 @@
             top: 0;
             left: 0;
             background: #3d4550;
-            width: 40%;
-            height: 80%;
+            width: 50%;
+            height: 100%;
             border-right: #ccc 1px solid;
             opacity: 0.9;
             padding: 30px;
             transform: translateX(-500px);
-            transition: transform 2s ease-in-out;
+            transition: transform 0.5s ease-in-out;
         }
         .nav-main ul.nav-menu show {
             transform: translateX(-20px);
@@ -211,11 +444,10 @@
             color: black;
         }
         .servicios {
-            flex-direction: column;
-            align-items: center;
+            grid-template-columns: 1fr 1fr;
         }
-        section {
-            padding: 20px;
+        .logos-marca {
+        margin-right: 100px;
         }
         .principal {
             background-size: contain;
@@ -233,9 +465,20 @@
         .opciones {
             grid-template-columns: 1fr;
         }
-        .mapouter h2 {
-            background-color: red;
-        }
+       .secciones{
+           display: block;
+
+       }
+       .contacto{
+           position: relative;
+           right: 100px;
+           padding-top: 30px;
+       }
+       .sections{
+           position: relative;
+           right: 150px;
+           padding-top: 30px;
+       }
     }
     
     @media (max-width: 768px) {
@@ -255,12 +498,12 @@
             top: 0;
             left: 0;
             background: #3c3d3f;
-            width: 40%;
-            height: 50%;
+            width: 50%;
+            height: 100%;
             border-right: #ccc 1px solid;
             opacity: 0.9;
             padding: 30px;
-            transition: transform 2s ease-in-out;
+            transition: transform 0.5s ease-in-out;
         }
         .nav-main ul.nav-menu show {
             transform: translateX(-20px);
@@ -309,6 +552,25 @@
         .social {
             position: relative;
         }
+        .maquinas{
+            grid-template-columns: 1fr;
+            
+        }
+        .servicios{
+            grid-template-columns: 1fr;
+        }
+
+        .servicios img{
+            margin-left: 200px;
+        }
+
+        .servicios p{
+            width: 50%;
+            margin-left: 200px;
+        }
+        .servicios h2{
+            margin-left: 300px;
+        }
     }
     
     @media (max-width: 576px) {
@@ -328,13 +590,13 @@
             top: 0;
             left: 0;
             background: #32363a;
-            width: 40%;
-            height: 40%;
+            width: 50%;
+            height: 100%;
             border-right: #ccc 1px solid;
             opacity: 0.9;
             padding: 30px;
             transform: translateX(-500px);
-            transition: transform 2s ease-in-out;
+            transition: transform 0.5s ease-in-out;
         }
         .nav-main ul.nav-menu li {
             padding: 20px;
@@ -353,15 +615,11 @@
         .cartas-servicios {
             grid-template-columns: 1fr;
         }
-        section {
-            padding: 20px;
-        }
+       
         .opciones {
             grid-template-columns: 1fr;
         }
-        .principal {
-            background-size: contain;
-        }
+    
         .menu_contacto {
             position: relative;
             left: 90px;
@@ -373,5 +631,96 @@
         .social {
             position: relative;
             left: 100px;
+        }
+
+        .servicios{
+            grid-template-columns: 1fr;
+        }
+
+        .servicios img{
+            margin-left: 50px;
+        }
+
+        .servicios h2{
+            margin-left: 100px;
+        }
+
+        .servicios p{
+            margin-left: 90px;
+        }
+
+        .logos-marca{
+            margin-left: 70px;
+            height: 100%;
+            width: 80%;
+        }
+
+        .slider{
+            height: 100%;
+        }
+
+    }
+    @media (max-width: 372px) {
+        .menu-btn {
+            display: block;
+            margin-right: 10px;
+        }
+        .menu-btn:hover {
+            opacity: 0.5;
+        }
+        .nav-main ul.nav-menu {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #0303028c;
+            width: 50%;
+            height: 60%;
+            border-right: #ccc 1px solid;
+            opacity: 1.5;
+            padding: 30px;
+            transform: translateX(-500px);
+            transition: transform 2s ease-in-out;
+        }
+        .nav-main ul.nav-menu li {
+            padding: 20px;
+            border-bottom: #ccc solid 1px;
+            font-size: 14px;
+        }
+        .nav-main ul.nav-menu li:last-child {
+            border-bottom: 0;
+        }
+        .nav-main ul.nav-menu.show {
+            transform: translateX(-20px);
+        }
+        .nav-main ul.nav-menu-right {
+            margin-right: 20px;
+        }
+        main {
+            grid-template-columns: 1fr;
+            background-color: red;
+            width:350px;
+        }
+        main img{
+            width: 350px;
+            height: 200px;
+        }
+        section {
+            padding: 20px;
+            background-color: blue;
+        }
+        .opciones {
+            grid-template-columns: 50px;
+        }
+        .principal {
+            background-size: contain;
+        }
+        .menu_contacto {
+            position: relative;
+            left: 90px;
+        }
+        .menu_horarios {
+            position: relative;
+            left: 90px;
         }
     }
