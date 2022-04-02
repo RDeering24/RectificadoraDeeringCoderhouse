@@ -135,6 +135,7 @@
         align-items: flex-end;
         padding-top: 20px;
         padding-bottom: 20px;
+
     
     }
 
@@ -182,7 +183,67 @@
         
     }
 
+      /*cartas-servicios*/
+   
+   .cartas-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    margin: 20px;
+    grid-area: main;
+    background-color: aliceblue;
     
+}
+
+.cartas-servicios h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cartas-servicios div li {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+}
+
+.cartas-servicios div {
+    border-left: 1px solid black;
+}
+
+
+
+.cartas-servicios a {
+    padding: 10px 0;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.cartas-servicios a:hover {
+    text-decoration: underline;
+}
+
+
+.cartas-servicios i{
+    position: relative;
+    font-size: 30px;
+    padding: 10px;
+    left: 200px;
+    bottom: 40px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 10px;
+    -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
     .logos-marca {
         grid-area: section;
         width: 75%;
@@ -368,7 +429,7 @@
    
 
    footer {
-    background: #fff;
+    background-color: lightgray;
     color: #141313;
     text-align: right;
     grid-area: footer;
@@ -376,23 +437,132 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 footer img{
     width: 100px;
-    height: 50px;
+    height: 60px;
     margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #ddd;
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+footer h6{
+    margin-top: 10px;
+    position: relative;
+    right: 15px;
+}
+.links-footer{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    left: 300px;
+    font-size: 30px;
+    justify-content: space-between;
+    width: 100px;
+    bottom: 30px;
+   
+}
+
+.links-footer h6{
+    margin: 20px;
+    position: relative;
+    right: 20px;
+    top: 10px;
+}
+
+.links-footer i{
+   
+   display: flex;
+   justify-content: space-around;
+   width: 50px;
+}
+.banner{
+    grid-area: principal;
+}
+.banner img{
+    width: 100%;
+
+}
+ 
+.contact{
+    width: 90%;
+    grid-area: secciones;
+    padding: 20px;
+    background-color: rgb(231, 226, 226);
+    margin-left: 50px;
+
+}
+
+.contact{
+    font-family: 'Quicksand', sans-serif;
+}
   
+
+.form-group input{
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+
+}
+.form-group label{
+    height: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.mensaje{
+    width: 95%;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
     
+
+.btn-enviar{
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    
+}
+ 
+.provincias{
+    width: 200px;
+    margin-left: 30px;
+}
+
+
+.banner_servicios{
+    grid-area: principal;
+}
+.banner_servicios img{
+    width: 100%;
     
 
 }
 
-    
-    .container-grid {
+.mapouter{
+   margin-left: 30px;
+}
+ 
+.container-grid {
         display: grid;
         grid-template-areas: "header header header""principal principal principal""titulo titulo titulo" "main main main" "main main main""section section section""article article article ""div div div""secciones secciones secciones" "secciones secciones secciones""footer footer footer";
     }
+
     
     .container-grid {
         width: 100%;
@@ -479,6 +649,32 @@ footer img{
            right: 150px;
            padding-top: 30px;
        }
+
+       .links-footer{
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        justify-content: space-between;
+        width: 100px;
+        left: -20px;
+        
+       
+    }
+    .links-footer h6{
+        visibility: hidden;
+        
+    }
+    
+    .links-footer i{
+       
+       display: flex;
+       justify-content: space-around;
+       width: 50px;
+       font-size: 20px;
+    }
+    .gmap_canvas iframe {
+        width: 900px;
+    }
     }
     
     @media (max-width: 768px) {
@@ -571,6 +767,10 @@ footer img{
         .servicios h2{
             margin-left: 300px;
         }
+
+        .gmap_canvas iframe {
+            width: 700px;
+        }
     }
     
     @media (max-width: 576px) {
@@ -614,10 +814,12 @@ footer img{
         }
         .cartas-servicios {
             grid-template-columns: 1fr;
+            
         }
        
         .opciones {
             grid-template-columns: 1fr;
+            width: 95%;
         }
     
         .menu_contacto {
@@ -635,6 +837,8 @@ footer img{
 
         .servicios{
             grid-template-columns: 1fr;
+            width: 95%;
+            
         }
 
         .servicios img{
@@ -657,10 +861,67 @@ footer img{
 
         .slider{
             height: 100%;
+            width: 95%;
         }
 
-    }
+        .titulo{
+        
+            width: 95%;
+        }
+
+        .secciones{
+            width: 95%;
+        }
+        .links-footer{
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            justify-content: space-between;
+            width: 100px;
+            left: -20px;
+            
+           
+        }
+        .links-footer h6{
+            visibility: hidden;
+            
+        }
+        
+        .links-footer i{
+           
+           display: flex;
+           justify-content: space-around;
+           width: 50px;
+           font-size: 20px;
+           position: relative;
+           right: 50px;
+        }
+
+        footer{
+            width: 100%;
+        }
+
+        .gmap_canvas iframe {
+            width: 500px;
+        }
+
+        .contact{
+            position: relative;
+            right: 30px;
+        }
+
+        .banner{
+            width: 95%;
+        }
+    }   
+
     @media (max-width: 372px) {
+
+       
+        .nav-main{
+            
+            width: 65%;
+        }
         .menu-btn {
             display: block;
             margin-right: 10px;
@@ -675,7 +936,7 @@ footer img{
             left: 0;
             background-color: #0303028c;
             width: 50%;
-            height: 60%;
+            height: 100%;
             border-right: #ccc 1px solid;
             opacity: 1.5;
             padding: 30px;
@@ -698,29 +959,101 @@ footer img{
         }
         main {
             grid-template-columns: 1fr;
-            background-color: red;
             width:350px;
         }
         main img{
             width: 350px;
             height: 200px;
         }
-        section {
-            padding: 20px;
-            background-color: blue;
-        }
+        
         .opciones {
             grid-template-columns: 50px;
         }
-        .principal {
-            background-size: contain;
-        }
+       
         .menu_contacto {
             position: relative;
-            left: 90px;
+            left: -30px;
         }
         .menu_horarios {
             position: relative;
-            left: 90px;
+            left: -30px;
         }
+        
+        .slider{
+            width: 65%;
+        }
+        
+        .titulo{
+            width: 65%;
+        }
+
+        .servicios{
+            width: 65%;
+        }
+        .servicios img{
+            width: 85%;
+            margin-left: 20px;
+        }
+        .opciones{
+            width: 65%;
+        }
+
+        .logos-marca{
+            width: 300px;
+            position: relative;
+            right: 50px;
+        }
+
+        .banner{
+            width: 75%;
+        }
+        .banner_servicios{
+            width: 70%;
+        }
+        .secciones{
+            width: 65%;
+        }
+
+        
+       
+
+        footer{
+            width: 70%;
+        }
+        
+        .links-footer{
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            justify-content: space-between;
+            width: 65%;
+            left: -20px;
+            
+           
+        }
+        .links-footer h6{
+            visibility: hidden;
+            
+        }
+        
+        .links-footer i{
+           
+           display: flex;
+           justify-content: space-around;
+           width: 50px;
+           font-size: 20px;
+          
+        }
+
+        .contact{
+            position: relative;
+            right: 50px;
+            width: 70%;
+        }
+
+        .gmap_canvas iframe {
+            width: 300px;
+        }
+        
+        
     }
