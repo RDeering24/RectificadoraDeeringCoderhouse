@@ -819,7 +819,7 @@ footer h6{
        
         .opciones {
             grid-template-columns: 1fr;
-            width: 95%;
+        
         }
     
         .menu_contacto {
@@ -837,7 +837,7 @@ footer h6{
 
         .servicios{
             grid-template-columns: 1fr;
-            width: 95%;
+            
             
         }
 
@@ -861,7 +861,7 @@ footer h6{
 
         .slider{
             height: 100%;
-            width: 95%;
+            
         }
 
         .titulo{
@@ -870,8 +870,10 @@ footer h6{
         }
 
         .secciones{
-            width: 95%;
-        }
+
+        }           
+        
+
         .links-footer{
             display: flex;
             align-items: flex-end;
@@ -898,7 +900,7 @@ footer h6{
         }
 
         footer{
-            width: 100%;
+        
         }
 
         .gmap_canvas iframe {
@@ -911,17 +913,13 @@ footer h6{
         }
 
         .banner{
-            width: 95%;
+            
         }
     }   
 
     @media (max-width: 372px) {
 
        
-        .nav-main{
-            
-            width: 65%;
-        }
         .menu-btn {
             display: block;
             margin-right: 10px;
@@ -959,98 +957,14 @@ footer h6{
         }
         main {
             grid-template-columns: 1fr;
-            width:350px;
+    
         }
         main img{
             width: 350px;
-            height: 200px;
-        }
-        
-        .opciones {
-            grid-template-columns: 50px;
-        }
-       
-        .menu_contacto {
-            position: relative;
-            left: -30px;
-        }
-        .menu_horarios {
-            position: relative;
-            left: -30px;
-        }
-        
-        .slider{
-            width: 65%;
-        }
-        
-        .titulo{
-            width: 65%;
-        }
-
-        .servicios{
-            width: 65%;
-        }
-        .servicios img{
-            width: 85%;
-            margin-left: 20px;
-        }
-        .opciones{
-            width: 65%;
-        }
-
-        .logos-marca{
-            width: 300px;
-            position: relative;
-            right: 50px;
-        }
-
-        .banner{
-            width: 75%;
-        }
-        .banner_servicios{
-            width: 70%;
-        }
-        .secciones{
-            width: 65%;
-        }
-
-        
-       
-
-        footer{
-            width: 70%;
-        }
-        
-        .links-footer{
-            display: flex;
-            align-items: flex-end;
-            position: relative;
-            justify-content: space-between;
-            width: 65%;
-            left: -20px;
-            
-           
-        }
-        .links-footer h6{
-            visibility: hidden;
             
         }
         
-        .links-footer i{
-           
-           display: flex;
-           justify-content: space-around;
-           width: 50px;
-           font-size: 20px;
-          
-        }
-
-        .contact{
-            position: relative;
-            right: 50px;
-            width: 70%;
-        }
-
+      
         .gmap_canvas iframe {
             width: 300px;
         }
