@@ -916,10 +916,7 @@ footer h6{
         .banner{
             width: 100%;
         }
-        html, body {
-            max-width: 100% !important;
-            overflow-x: hidden !important;
-        }
+       
     }   
 
     @media (max-width: 372px) {
