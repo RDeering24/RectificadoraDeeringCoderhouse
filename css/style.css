@@ -960,9 +960,14 @@ footer h6{
             transition: transform 2s ease-in-out;
         }
         .nav-main ul.nav-menu li {
-            padding: 20px;
+            padding: 40px;
             border-bottom: #ccc solid 1px;
-            font-size: 14px;
+            font-size:30px;
+            
+        }
+
+        .nav-main ul.nav-menu{
+            width: 300px;
         }
         .nav-main ul.nav-menu li:last-child {
             border-bottom: 0;
@@ -970,6 +975,7 @@ footer h6{
         .nav-main ul.nav-menu.show {
             transform: translateX(-20px);
         }
+        
         .nav-main ul.nav-menu-right {
             margin-right: 20px;
         }
@@ -1039,7 +1045,7 @@ footer h6{
         }
 
         footer{
-            width: 350px;
+            width: 360px;
         }
 
         .links-footer{
@@ -1083,7 +1089,7 @@ footer h6{
         }
 
         .opciones{
-            width: 350px;
+            width: 360px;
         }
 
         .opciones div{
@@ -1092,11 +1098,8 @@ footer h6{
 
         .cartas-servicios{
             width: 350px;
+            margin-left: 0;
         }
         
-        html, body {
-            max-width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        
+       
     }
