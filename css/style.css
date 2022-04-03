@@ -774,6 +774,7 @@ footer h6{
     }
     
     @media (max-width: 576px) {
+      
         .menu-btn {
             display: block;
             margin-right: 10px;
@@ -913,11 +914,28 @@ footer h6{
         }
 
         .banner{
-            
+            width: 100%;
+        }
+        html, body {
+            max-width: 100% !important;
+            overflow-x: hidden !important;
         }
     }   
 
     @media (max-width: 372px) {
+        
+        header{
+            width: 350px;
+        }
+        .banner{
+            width: 350px;
+        }
+        .nav-main{
+            width: 350px;
+            margin: 0;
+            padding: 0;
+            
+        }
 
        
         .menu-btn {
@@ -963,11 +981,122 @@ footer h6{
             width: 350px;
             
         }
-        
+        .maquinas{
+            
+            width: 350px;
+            margin-bottom: 20px;
+        }
+        .historia_descripcion{
+            position: relative;
+            right: 20px;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .historia_maquinas h2{
+            
+            width: 300px;
+            margin-bottom: 20px;
+
+        }
+         .historia_maquinas{
+             width: 300px;
+         }
+        .historia{
+            width: 300px;
+        }
+        .menu_contacto{
+            width: 250px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 20px;
+        }
+
+        .menu_horarios{
+            width: 250px;
+            width: 250px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 20px;
+        }
+
+        .logos-marca{
+           width: 330px;   
+            margin: 0;
+        }
+
+        .social{
+            position: relative;
+            left: 50px;
+            margin: 0;
+        }
+
+        .contact{
+            width: 300px;
+        }
+
+        footer{
+            width: 350px;
+        }
+
+        .links-footer{
+            display: block;
+        }
       
         .gmap_canvas iframe {
             width: 300px;
         }
         
+        .slider{
+            width: 350px;
+        }
+
+        .titulo{
+            width: 300px;
+        }
+
+        .servicios{
+            width: 350px;
+            margin-bottom: 20px;
+        }
+
+        .servicios div{
+            padding: 0;
+            margin: 0;
+            width: 330px;
+        }
+
+        .servicios div h2{
+            margin: 0;
+            width: 200px;
+        }
+
+        .servicios div img {
+            margin: 0;
+            position: relative;
+            left: 20px;
+            width: 300px;
+            height: 200px;
+        }
+
+        .opciones{
+            width: 350px;
+        }
+
+        .opciones div{
+            width: 300px;
+        }
+
+        .cartas-servicios{
+            width: 350px;
+        }
+        
+        html, body {
+            max-width: 100% !important;
+            overflow-x: hidden !important;
+        }
         
     }
