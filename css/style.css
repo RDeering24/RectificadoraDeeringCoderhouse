@@ -1098,5 +1098,11 @@ footer h6{
             margin-left: 0;
         }
         
-       
+       .secciones{
+           width: 350px;
+       }
+
+       .banner_servicios{
+           width: 350px;
+       }
     }
