@@ -440,6 +440,7 @@
     
 }
 
+
 footer img{
     width: 100px;
     height: 60px;
@@ -482,6 +483,10 @@ footer h6{
    justify-content: space-around;
    width: 50px;
 }
+
+
+
+
 .banner{
     grid-area: principal;
 }
