@@ -5,14 +5,19 @@
 }
 
     /* Navegacion */
-
+    header {
+        grid-area: header;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
     .nav-main {
         font-size: 17px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items:center;
         height: 60px;
-        padding: 20px 0;
+        
         
     }
     
@@ -25,7 +30,7 @@
     }
     
     .nav-main ul li {
-        padding: 50px;
+        padding-left: 20px;
     }
     
     .nav-main ul li a:hover {
@@ -46,52 +51,46 @@
     /*boton responsivo*/
 
     .menu-btn {
-        position: absolute;
-        cursor: pointer;
-        top: 15px;
-        right: 30px;
-        z-index: 2;
-        font-size: 24px;
-        display: none;
+        color: black;
+        background: none;
+       border: none;
+       font-size: 30px;
+       padding: 0 20px;
+        line-height: 60px;
+       cursor: pointer;
+
+      display: none;
     }
     /*social*/
     
     .social {
-        margin: 50px;
-        position: relative;
-        left: 350px;
-        width: 40%;
+    
     }
     
     .social h3 {
         text-align: center;
         font-size: 30px;
-        margin-top: 50px;
-        padding: 20px;
         font-family: 'Quicksand', sans-serif;
         
     }
     
     .links {
+
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
-        margin-right: 60px;
     }
     
     .links a {
-        margin: 0 50px;
+        
     }
     
     .links a i {
         font-size: 3rem;
     }
 
-    header {
-        grid-area: header;
-        height: 100px;
-    }
+   
     
     .slider {
         width: 100%;
@@ -143,23 +142,35 @@
     
         font-family: 'Quicksand', sans-serif;
     }
+
     .servicios {
         grid-area: main;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        place-content: center;
         background-color: #2f3648;
+    
         
+    }
+
+    .servicios div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;      
+
     }
     
     .servicios img {
         width: 400px;
         height: 300px;
         transition: transform .5s;
-        margin-left: 40px;
+    
         opacity: 0.5;
-       
-        
     }
     
     .servicios img:hover{
@@ -169,27 +180,24 @@
     
     .servicios h2{
         padding: 20px;
-        margin-left: 100px;
         color: #fff;
         position: initial;
     
     }
     .servicios p{
-        position: relative;
-        bottom: 40px;
+    
         color: #fff;
+        text-align: left;
         width: 80%;
-        margin-left: 50px;
-        
     }
 
       /*cartas-servicios*/
    
    .cartas-servicios {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
-    margin: 20px;
     grid-area: main;
     background-color: aliceblue;
     
@@ -212,12 +220,15 @@
 
 .cartas-servicios div {
     border-left: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 .cartas-servicios a {
-    padding: 10px 0;
+
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
@@ -244,20 +255,18 @@
      -o-transform: rotate(45deg);
      transform: rotate(45deg);
 }
+
     .logos-marca {
         grid-area: section;
-        width: 75%;
-        padding: 20px;
-        margin-left: 150px;
-        border-bottom: #2f3648 1px solid;
-        border-top: #2f3648 1px solid;
         display: flex;
-        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
     }
     
     .logos-marca img {
-        width: 100%;
-    
+        width: 75%;
+        border-bottom: #2f3648 1px solid;
+        border-top: #2f3648 1px solid;
     }
     
     article {
@@ -373,13 +382,12 @@
        display: flex;
        justify-content:space-between;
        align-items:center;
+       justify-items: center;
        color: #fff;
        font-size: 20px;
        background: #3d4550;
        padding: 40px;
        background-image: url(../img/puesta\ en\ marcha.jpg);
-       
-    
        
    }
    
@@ -398,11 +406,7 @@
         margin-bottom: 20px;
     }
    
-   .contacto{
-       
-       width: 300px;
-       margin-left: 80px;
-   }
+ 
 
    .contacto h5{
     padding: 20px 20px 0;
@@ -414,12 +418,7 @@
     border-bottom: 2px solid black ;
 }
    
-   .sections{
-       
-       width: 300px;
-       margin-left: 150px;
-       
-   }
+   
    
    .sections a{
     
@@ -564,19 +563,17 @@ footer h6{
 }
  
 .container-grid {
-        display: grid;
-        grid-template-areas: "header header header""principal principal principal""titulo titulo titulo" "main main main" "main main main""section section section""article article article ""div div div""secciones secciones secciones" "secciones secciones secciones""footer footer footer";
-    }
 
-    
-    .container-grid {
-        width: 100%;
-    }
+        display: grid;
+
+        grid-template-areas: "header header header""principal principal principal""titulo titulo titulo" "main main main" "main main main""section section section""article article article ""div div div""secciones secciones secciones" "secciones secciones secciones""footer footer footer";   
+     }
+
     
     @media (max-width: 992px) {
         .menu-btn {
             display: block;
-            margin-right: 50px;
+            
         }
         .menu-btn:hover {
             opacity: 0.5;
@@ -621,39 +618,22 @@ footer h6{
         .servicios {
             grid-template-columns: 1fr 1fr;
         }
-        .logos-marca {
-        margin-right: 100px;
-        }
+    
         .principal {
             background-size: contain;
         }
-        hr {
-            margin-bottom: 30px;
-        }
-        .social {
-            position: hidden;
-            left: 200px
-        }
+       
         .fab {
             color: blue;
         }
         .opciones {
+            
             grid-template-columns: 1fr;
         }
-       .secciones{
-           display: block;
-
-       }
-       .contacto{
-           position: relative;
-           right: 100px;
-           padding-top: 30px;
-       }
-       .sections{
-           position: relative;
-           right: 150px;
-           padding-top: 30px;
-       }
+        .opciones a{
+            margin: 0;
+        }
+       
 
        .links-footer{
         display: flex;
@@ -680,55 +660,28 @@ footer h6{
     .gmap_canvas iframe {
         width: 900px;
     }
+    .nosotros{
+        margin: 0;
+    }
     }
     
     @media (max-width: 768px) {
-        .menu-btn {
-            display: block;
-            margin-right: 50px;
+       
+       
+        .slider{
+            width: 100%;
         }
-        .menu-btn:hover {
-            opacity: 0.5;
-        }
-        a {
-            color: #fff;
-        }
-        .nav-main ul.nav-menu {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #3c3d3f;
-            width: 50%;
-            height: 100%;
-            border-right: #ccc 1px solid;
-            opacity: 0.9;
-            padding: 30px;
-            transition: transform 0.5s ease-in-out;
-        }
-        .nav-main ul.nav-menu show {
-            transform: translateX(-20px);
-        }
-        .nav-main ul.nav-menu li {
-            padding: 20px;
-            border-bottom: #ccc solid 1px;
-            font-size: 14px;
-        }
-        .nav-main ul.nav-menu li:last-child {
-            border-bottom: 0;
-        }
-        .nav-main ul.nav-menu.show {
-            transform: translateX(-20px);
-        }
-        .nav-main ul.nav-menu-right {
-            margin-right: 80px;
-        }
-        .nav-menu-right a i {
-            color: black;
-        }
-        main {
-            grid-template-columns: 1fr;
-        }
+        
+       .servicios div h2{
+           margin: 0;
+       }
+       .servicios div img {
+           margin: 0;
+       }
+       .servicios div p{
+           margin: 0;
+       }
+      
         section {
             padding: 20px;
         }
@@ -744,14 +697,12 @@ footer h6{
         .contacto {
             padding: 20px;
         }
-        hr {
-            margin-bottom: 30px;
-        }
+       
         .historia {
             margin-bottom: 30px;
         }
         .social {
-            position: relative;
+        
         }
         .maquinas{
             grid-template-columns: 1fr;
@@ -762,15 +713,14 @@ footer h6{
         }
 
         .servicios img{
-            margin-left: 200px;
+         
         }
 
         .servicios p{
-            width: 50%;
-            margin-left: 200px;
+            
         }
         .servicios h2{
-            margin-left: 300px;
+        
         }
 
         .gmap_canvas iframe {
@@ -780,9 +730,13 @@ footer h6{
     
     @media (max-width: 576px) {
       
-        .menu-btn {
+      
+    
+        .menu-btn  {
             display: block;
-            margin-right: 10px;
+            margin: 0;
+            padding: 0;
+            
         }
         .menu-btn:hover {
             opacity: 0.5;
@@ -837,8 +791,7 @@ footer h6{
             left: 90px;
         }
         .social {
-            position: relative;
-            left: 100px;
+           
         }
 
         .servicios{
@@ -848,36 +801,26 @@ footer h6{
         }
 
         .servicios img{
-            margin-left: 50px;
+          
         }
 
         .servicios h2{
-            margin-left: 100px;
+          
         }
 
         .servicios p{
-            margin-left: 90px;
         }
 
         .logos-marca{
-            margin-left: 70px;
-            height: 100%;
-            width: 80%;
+           margin: 0;
+            
         }
 
         .slider{
             height: 100%;
             
         }
-
-        .titulo{
-        
-            width: 95%;
-        }
-
-        .secciones{
-
-        }           
+           
         
 
         .links-footer{
@@ -926,24 +869,16 @@ footer h6{
 
     @media (max-width: 372px) {
         
-        header{
-            width: 350px;
-        }
-        .banner{
-            width: 350px;
-        }
+
+       
+        
         .nav-main{
-            width: 350px;
             margin: 0;
             padding: 0;
-            
         }
 
        
-        .menu-btn {
-            display: block;
-            margin-right: 10px;
-        }
+       
         .menu-btn:hover {
             opacity: 0.5;
         }
@@ -962,14 +897,14 @@ footer h6{
             transition: transform 2s ease-in-out;
         }
         .nav-main ul.nav-menu li {
-            padding: 40px;
+            padding: 20px;
             border-bottom: #ccc solid 1px;
-            font-size:30px;
+            font-size:14px;
             
         }
 
         .nav-main ul.nav-menu{
-            width: 300px;
+        
         }
         .nav-main ul.nav-menu li:last-child {
             border-bottom: 0;
@@ -981,133 +916,108 @@ footer h6{
         .nav-main ul.nav-menu-right {
             margin-right: 20px;
         }
-        main {
-            grid-template-columns: 1fr;
-    
-        }
+      
         main img{
-            width: 350px;
+           
             
         }
         .maquinas{
             
-            width: 350px;
-            margin-bottom: 20px;
+            
+            
         }
         .historia_descripcion{
-            position: relative;
-            right: 20px;
-            width: 300px;
+            
+            
             margin: 0;
             padding: 0;
         }
 
         .historia_maquinas h2{
             
-            width: 300px;
+            
             margin-bottom: 20px;
 
         }
          .historia_maquinas{
-             width: 300px;
+             
          }
         .historia{
-            width: 300px;
+            
         }
         .menu_contacto{
-            width: 250px;
+            
             margin: 0;
             padding: 0;
-            position: relative;
-            left: 20px;
+            
+            
         }
 
         .menu_horarios{
-            width: 250px;
-            width: 250px;
+           
             margin: 0;
             padding: 0;
-            position: relative;
-            left: 20px;
+        
         }
 
         .logos-marca{
-           width: 330px;   
+             
             margin: 0;
         }
 
         .social{
-            position: relative;
-            left: 50px;
+           
             margin: 0;
         }
-
-        .contact{
-            width: 300px;
-        }
-
-        footer{
-            width: 360px;
-        }
-
-        .links-footer{
-            display: block;
-        }
-      
+       
         .gmap_canvas iframe {
             width: 300px;
         }
         
-        .slider{
-            width: 350px;
-        }
 
-        .titulo{
-            width: 300px;
-        }
-
-        .servicios{
-            width: 350px;
+        .servicios{ 
             margin-bottom: 20px;
         }
 
         .servicios div{
             padding: 0;
-            margin: 0;
-            width: 330px;
+            margin: 0;  
         }
 
         .servicios div h2{
             margin: 0;
-            width: 200px;
+            
         }
 
         .servicios div img {
             margin: 0;
-            position: relative;
-            left: 20px;
-            width: 300px;
-            height: 200px;
+            
+            
         }
 
         .opciones{
-            width: 360px;
+        
         }
 
         .opciones div{
-            width: 300px;
+            
         }
 
         .cartas-servicios{
-            width: 350px;
+            
             margin-left: 0;
         }
         
        .secciones{
-           width: 350px;
+           
        }
 
        .banner_servicios{
-           width: 350px;
+        
+       }
+
+       .nosotros{
+           margin: 0;
+           padding: 0;
        }
     }
