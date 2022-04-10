@@ -567,6 +567,9 @@ footer h6{
     color: black;
     border-bottom: 1px solid gainsboro;
 }
+.categorias h2 i{
+    padding: 10px;
+}
 
 .archivos h2{
     border-bottom: 1px gainsboro solid;
@@ -576,6 +579,9 @@ footer h6{
     font-size: 20px;
     color: black;
     border-bottom: 1px solid gainsboro;
+}
+.archivos h2 i{
+    padding: 10px;
 }
 .card-blog1 p{
    padding: 10px;  
