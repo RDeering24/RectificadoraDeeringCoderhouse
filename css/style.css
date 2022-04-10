@@ -82,15 +82,10 @@
         padding: 10px;
     }
     
-    .links a {
-        
-    }
     
     .links a i {
         font-size: 3rem;
     }
-
-   
     
     .slider {
         width: 100%;
@@ -191,56 +186,42 @@
         width: 80%;
     }
 
-      /*cartas-servicios*/
-   
-   .cartas-servicios {
-
+  /*cartas-servicios*/
+.cartas-servicios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
+    margin: 20px;
     grid-area: main;
     background-color: aliceblue;
-    
-}
-
-.cartas-servicios h3 {
+  }
+  .cartas-servicios h3 {
     text-align: center;
     font-size: 30px;
     margin: 10px 0;
     padding: 10px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.cartas-servicios div li {
+    font-family: "Quicksand", sans-serif;
+  }
+  .cartas-servicios div {
+    border-left: 1px solid black;
+  }
+  .cartas-servicios div li {
     padding: 10px;
     margin: 10px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     list-style: none;
-}
-
-.cartas-servicios div {
-    border-left: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.cartas-servicios a {
-
+  }
+  .cartas-servicios a {
+    padding: 10px 0;
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
     font-size: 25px;
-}
-
-.cartas-servicios a:hover {
+  }
+  .cartas-servicios a:hover {
     text-decoration: underline;
-}
-
-
-.cartas-servicios i{
+  }
+  .cartas-servicios i {
     position: relative;
     font-size: 30px;
     padding: 10px;
@@ -250,12 +231,12 @@
     border-left: 1px solid black;
     border-radius: 10px;
     -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-     -ms-transform: rotate(45deg);
-     -o-transform: rotate(45deg);
-     transform: rotate(45deg);
-}
-
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
     .logos-marca {
         grid-area: section;
         display: flex;
@@ -349,9 +330,7 @@
     
     .menu_contacto {
         border: 2px solid gray;
-        width: 350px;
-        position: relative;
-        left: 200px;
+        
     }
     
     .menu_horarios p {
@@ -371,31 +350,23 @@
     
     .menu_horarios {
         border: 2px solid gray;
-        width: 350px;
-        position: relative;
-        left: 200px;
         margin-top: 80px;
     }
 
    .secciones{
        grid-area: secciones;
-       display: flex;
-       justify-content:space-between;
-       align-items:center;
-       justify-items: center;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr ;
+       gap: 60px;
        color: #fff;
        font-size: 20px;
        background: #3d4550;
        padding: 40px;
-       background-image: url(../img/puesta\ en\ marcha.jpg);
+       background-image: url(../img/puesta\ en\ marcha.jpg) ;
        
    }
    
 
-   .nosotros{
-       
-       width: 300px;
-   }
 
    .nosotros p{
        
@@ -443,7 +414,7 @@
 footer img{
     width: 100px;
     height: 60px;
-    margin-right: 50px;
+    
     border-radius: 10px;
     box-shadow: 0 0 50px #ddd;
     background: #fff;
@@ -454,27 +425,20 @@ footer img{
 
 footer h6{
     margin-top: 10px;
-    position: relative;
-    right: 15px;
+    
 }
 .links-footer{
     display: flex;
     align-items: flex-end;
-    position: relative;
-    left: 300px;
+    
+    
     font-size: 30px;
     justify-content: space-between;
-    width: 100px;
-    bottom: 30px;
+    
+    
    
 }
 
-.links-footer h6{
-    margin: 20px;
-    position: relative;
-    right: 20px;
-    top: 10px;
-}
 
 .links-footer i{
    
@@ -499,7 +463,7 @@ footer h6{
     grid-area: secciones;
     padding: 20px;
     background-color: rgb(231, 226, 226);
-    margin-left: 50px;
+    
 
 }
 
@@ -545,7 +509,7 @@ footer h6{
  
 .provincias{
     width: 200px;
-    margin-left: 30px;
+    
 }
 
 
@@ -554,13 +518,19 @@ footer h6{
 }
 .banner_servicios img{
     width: 100%;
-    
-
 }
 
 .mapouter{
    margin-left: 30px;
 }
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
  
 .container-grid {
 
@@ -619,9 +589,7 @@ footer h6{
             grid-template-columns: 1fr 1fr;
         }
     
-        .principal {
-            background-size: contain;
-        }
+
        
         .fab {
             color: blue;
@@ -663,6 +631,9 @@ footer h6{
     .nosotros{
         margin: 0;
     }
+    .cartas-servicios{
+        grid-template-columns: 1fr 1fr ;
+    }
     }
     
     @media (max-width: 768px) {
@@ -701,9 +672,7 @@ footer h6{
         .historia {
             margin-bottom: 30px;
         }
-        .social {
         
-        }
         .maquinas{
             grid-template-columns: 1fr;
             
@@ -712,15 +681,13 @@ footer h6{
             grid-template-columns: 1fr;
         }
 
-        .servicios img{
-         
-        }
-
-        .servicios p{
-            
-        }
-        .servicios h2{
-        
+        .secciones{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
         }
 
         .gmap_canvas iframe {
@@ -782,17 +749,7 @@ footer h6{
         
         }
     
-        .menu_contacto {
-            position: relative;
-            left: 90px;
-        }
-        .menu_horarios {
-            position: relative;
-            left: 90px;
-        }
-        .social {
-           
-        }
+
 
         .servicios{
             grid-template-columns: 1fr;
@@ -800,16 +757,6 @@ footer h6{
             
         }
 
-        .servicios img{
-          
-        }
-
-        .servicios h2{
-          
-        }
-
-        .servicios p{
-        }
 
         .logos-marca{
            margin: 0;
@@ -826,10 +773,9 @@ footer h6{
         .links-footer{
             display: flex;
             align-items: flex-end;
-            position: relative;
             justify-content: space-between;
             width: 100px;
-            left: -20px;
+        
             
            
         }
@@ -844,33 +790,29 @@ footer h6{
            justify-content: space-around;
            width: 50px;
            font-size: 20px;
-           position: relative;
-           right: 50px;
-        }
-
-        footer{
         
         }
+
+
 
         .gmap_canvas iframe {
             width: 500px;
         }
 
-        .contact{
-            position: relative;
-            right: 30px;
-        }
+        
 
         .banner{
             width: 100%;
+        }
+
+        .secciones{
+            display: grid;
+            grid-template-columns: 1fr;
         }
        
     }   
 
     @media (max-width: 372px) {
-        
-
-       
         
         .nav-main{
             margin: 0;
@@ -903,9 +845,6 @@ footer h6{
             
         }
 
-        .nav-main ul.nav-menu{
-        
-        }
         .nav-main ul.nav-menu li:last-child {
             border-bottom: 0;
         }
@@ -939,12 +878,7 @@ footer h6{
             margin-bottom: 20px;
 
         }
-         .historia_maquinas{
-             
-         }
-        .historia{
-            
-        }
+         
         .menu_contacto{
             
             margin: 0;
@@ -995,26 +929,14 @@ footer h6{
             
         }
 
-        .opciones{
-        
-        }
-
-        .opciones div{
-            
-        }
 
         .cartas-servicios{
             
             margin-left: 0;
         }
         
-       .secciones{
-           
-       }
 
-       .banner_servicios{
-        
-       }
+       
 
        .nosotros{
            margin: 0;
