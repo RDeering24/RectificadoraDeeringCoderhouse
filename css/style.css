@@ -370,7 +370,7 @@
 
    .nosotros p{
        
-    padding: 5px 5px 0;
+        padding: 5px 5px 0;
     }
 
     .nosotros h4{
@@ -530,8 +530,85 @@ footer h6{
     justify-items: center;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
 
- 
+.principal{
+    grid-area: principal;
+    height: 200px;
+}
+
+.cat{
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.categorias{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.categorias h2{
+    border-bottom: 1px gainsboro solid;
+    margin-bottom: 20px;
+}
+.categorias ul li a{
+    font-size: 20px;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+}
+
+.archivos h2{
+    border-bottom: 1px gainsboro solid;
+    margin-bottom: 20px;
+}
+.archivos ul li a{
+    font-size: 20px;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+}
+.card-blog1 p{
+   padding: 10px;  
+}
+
+.seccion1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card4 img{
+    height: 300px;
+}
+.card4{
+    
+    text-align: center;
+}
+
+.card3 p{
+    border: 1px solid black;
+}
+
+.card-blog img{
+    height: 200px;
+}
+.card-blog p{
+    padding: 10px;
+}
+
+
+
+
 .container-grid {
 
         display: grid;
@@ -633,6 +710,12 @@ footer h6{
     }
     .cartas-servicios{
         grid-template-columns: 1fr 1fr ;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .cat{
+        border-top: 1px solid black;
     }
     }
     
