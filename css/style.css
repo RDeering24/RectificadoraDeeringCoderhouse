@@ -64,6 +64,7 @@
     /*social*/
     
     .social {
+        grid-area: article;
     
     }
     
@@ -107,7 +108,6 @@
 
     .slider img{
         width: 100%;
-        height: 85%;
     }
     
     @keyframes cambio{
@@ -161,8 +161,8 @@
     }
     
     .servicios img {
-        width: 400px;
-        height: 300px;
+        width: 85%;
+        height: 100%;
         transition: transform .5s;
     
         opacity: 0.5;
@@ -191,7 +191,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
-    margin: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     grid-area: main;
     background-color: aliceblue;
   }
@@ -264,12 +265,11 @@
     }
     
     .opciones a {
-        padding: 80px;
+        padding: 60px;
         text-transform: uppercase;
         display: inline-block;
         font-weight: bold;
         font-size: 25px;
-        margin: 20px;
         color: whitesmoke;
     }
     
@@ -523,11 +523,13 @@ footer h6{
 .mapouter{
    margin-left: 30px;
 }
-.principal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+
+.mapa{
+    margin: 0;
+    grid-area: principal;
+}
+.mapouter{
+    margin: 0;
 }
 
 .container{
@@ -684,33 +686,8 @@ footer h6{
         .opciones a{
             margin: 0;
         }
-       
-
-       .links-footer{
-        display: flex;
-        align-items: flex-end;
-        position: relative;
-        justify-content: space-between;
-        width: 100px;
-        left: -20px;
-        
-       
-    }
-    .links-footer h6{
-        visibility: hidden;
-        
     }
     
-    .links-footer i{
-       
-       display: flex;
-       justify-content: space-around;
-       width: 50px;
-       font-size: 20px;
-    }
-    .gmap_canvas iframe {
-        width: 900px;
-    }
     .nosotros{
         margin: 0;
     }
@@ -723,7 +700,7 @@ footer h6{
     .cat{
         border-top: 1px solid black;
     }
-    }
+    
     
     @media (max-width: 768px) {
        
@@ -779,9 +756,10 @@ footer h6{
             text-align: center;
         }
 
-        .gmap_canvas iframe {
-            width: 700px;
+        .seccion1{
+            grid-template-columns: 1fr;
         }
+
     }
     
     @media (max-width: 576px) {
@@ -858,38 +836,6 @@ footer h6{
         }
            
         
-
-        .links-footer{
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            width: 100px;
-        
-            
-           
-        }
-        .links-footer h6{
-            visibility: hidden;
-            
-        }
-        
-        .links-footer i{
-           
-           display: flex;
-           justify-content: space-around;
-           width: 50px;
-           font-size: 20px;
-        
-        }
-
-
-
-        .gmap_canvas iframe {
-            width: 500px;
-        }
-
-        
-
         .banner{
             width: 100%;
         }
@@ -945,15 +891,7 @@ footer h6{
             margin-right: 20px;
         }
       
-        main img{
-           
-            
-        }
-        .maquinas{
-            
-            
-            
-        }
+    
         .historia_descripcion{
             
             
@@ -992,10 +930,6 @@ footer h6{
            
             margin: 0;
         }
-       
-        .gmap_canvas iframe {
-            width: 300px;
-        }
         
 
         .servicios{ 
@@ -1023,9 +957,7 @@ footer h6{
             
             margin-left: 0;
         }
-        
-
-       
+    
 
        .nosotros{
            margin: 0;
