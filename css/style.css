@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
     /* Navegacion */
@@ -10,6 +11,14 @@
         display: flex;
         justify-content:space-around;
         align-items: center;
+        background-color: #262626;
+    }
+   
+    .nav-brand {
+        height: 70px;
+        border-radius: 50px;
+        
+    
     }
     .nav-main {
         font-size: 17px;
@@ -17,13 +26,11 @@
         justify-content: space-between;
         align-items:center;
         height: 60px;
+        font-family: 'Robotic',sans-serif ;
         
         
     }
     
-    .nav-brand {
-        width: 200px;
-    }
     
     .nav-main ul {
         display: flex;
@@ -34,10 +41,12 @@
     }
     
     .nav-main ul li a:hover {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid #fff;
     }
-    
-
+    .nav-main ul li a{
+        color:#fff;
+    }
+   
 
     a {
         text-decoration: none;
@@ -51,7 +60,7 @@
     /*boton responsivo*/
 
     .menu-btn {
-        color: black;
+        color: #fff;
         background: none;
        border: none;
        font-size: 30px;
@@ -61,33 +70,7 @@
 
       display: none;
     }
-    /*social*/
-    
-    .social {
-        grid-area: article;
-    
-    }
-    
-    .social h3 {
-        text-align: center;
-        font-size: 30px;
-        font-family: 'Quicksand', sans-serif;
-        
-    }
-    
-    .links {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    }
-    
-    
-    .links a i {
-        font-size: 3rem;
-    }
-    
+   
     .slider {
         width: 100%;
         height: 500px;
@@ -187,13 +170,13 @@
     }
 
 /*cartas-servicios*/
+
 .cartas-servicios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
     margin-top: 20px;
     grid-area: main;
-    background-color: aliceblue;
     margin-top: 60px;
   }
   .cartas-servicios h3 {
@@ -202,15 +185,29 @@
     margin: 10px 0;
     padding: 10px;
     font-family: "Quicksand", sans-serif;
+    background-color: #262626;
+    color: #fff;
   }
-  .cartas-servicios div {
-    border-left: 1px solid black;
+  .services {
+     border: #262626 1px solid;
+     background-color: #d8cfcf;
+     border-radius: 10px;
+     
+  }
+
+  .services p{
+      color: #fff;
+      font-family: 'Robotic',sans-serif;
+      margin-top: 10px ;
+      text-align: center;
+
   }
   .cartas-servicios div li {
     padding: 10px;
     margin: 10px;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Robotic", sans-serif;
     list-style: none;
+    color: #fff;
   }
   .cartas-servicios a {
     padding: 10px 0;
@@ -223,27 +220,25 @@
     text-decoration: underline;
   }
   .cartas-servicios i {
-    position: relative;
-    font-size: 30px;
-    padding: 10px;
-    left: 200px;
-    bottom: 40px;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-radius: 10px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    font-size: 40px;
+    color: #fff;
   }
   
+  .rombo1{
+      display: flex;
+      justify-content: center;
+
+  }
   
+  /*LOGOS-ESCUDERIAS*/
+
     .logos-marca {
         grid-area: section;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
     .logos-marca img {
@@ -390,65 +385,18 @@
     border-bottom: 2px solid black ;
 }
    
-   
+   .secciones p{
+       color: #fff;
+   }
+   .secciones h4{
+       color: #fff;
+   }
    
    .sections a{
     
       display: inline-block;
       padding: 10px 10px 0;
    }
-   
-
-   footer {
-    background-color: lightgray;
-    color: #141313;
-    text-align: right;
-    grid-area: footer;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-
-
-footer img{
-    width: 100px;
-    height: 60px;
-    
-    border-radius: 10px;
-    box-shadow: 0 0 50px #ddd;
-    background: #fff;
-    padding: 10px;
-    margin-top: 10px;
-
-}
-
-footer h6{
-    margin-top: 10px;
-    
-}
-.links-footer{
-    display: flex;
-    align-items: flex-end;
-    
-    
-    font-size: 30px;
-    justify-content: space-between;
-    
-    
-   
-}
-
-
-.links-footer i{
-   
-   display: flex;
-   justify-content: space-around;
-   width: 50px;
-}
-
-
 
 
 .banner{
@@ -460,17 +408,19 @@ footer h6{
 }
  
 .contact{
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     grid-area: secciones;
-    padding: 20px;
-    background-color: rgb(231, 226, 226);
+    padding: 10px;
+    background-color: rgb(208, 210, 238);
+    font-family: 'Quicksand', sans-serif;
     
 
 }
 
-.contact{
-    font-family: 'Quicksand', sans-serif;
-}
+
   
 
 .form-group input{
@@ -481,14 +431,16 @@ footer h6{
     width: 95%;
     padding: 20px;
     margin: 20px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    border-radius: 10px;
 
 }
 .form-group label{
     height: 30px;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
 
 }
 
@@ -497,6 +449,7 @@ footer h6{
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    border-radius: 10px;
 
 }
     
@@ -619,8 +572,81 @@ footer h6{
     padding: 10px;
 }
 
+/*footer - footer - footer - footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+}
+.s1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:beige;
+    justify-items: center;
+    height: 100px;
+    border-bottom: 1px solid rgb(214, 195, 195);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    
+}
+.seccion2{
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    color: gray;
+    height: 300px;
+    justify-items: s;
+    font-family: 'Roboto', sans-serif;
+    align-content: center;
+
+}
+
+.seccion2 div p{
+    padding-top: 10px;
+    color:gray;
+}
+.seccion2 h3{
+    color: #262626;
+}
+
+.seccion4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+}
+
+.title-one{
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+}
+
+.secciones3 a{
+    text-decoration: none;
+    color: gray;
+
+}
+
+.secciones3 h3{
+    font-family: 'Roboto', sans-serif;
+    color: #2f3648;
+}
 
 
+.secciones3 p {
+  padding-top:10px;
+}
+
+.secciones3 a:hover{
+    border-bottom: 1px solid gray;
+}
 
 .container-grid {
 
@@ -635,6 +661,11 @@ footer h6{
             display: block;
             
         }
+        header{
+            display: flex;
+            justify-content: space-between;
+        
+        }
         .menu-btn:hover {
             opacity: 0.5;
         }
@@ -646,11 +677,11 @@ footer h6{
             position: absolute;
             top: 0;
             left: 0;
-            background: #3d4550;
+            background:#3d4550;
+            opacity: 0.9;
             width: 50%;
             height: 100%;
             border-right: #ccc 1px solid;
-            opacity: 0.9;
             padding: 30px;
             transform: translateX(-500px);
             transition: transform 0.5s ease-in-out;
@@ -776,6 +807,10 @@ footer h6{
         .seccion1{
             grid-template-columns: 1fr;
         }
+
+        .seccion2{
+            grid-template-columns: 1fr 1fr ;
+        }
     }
     
     @media (max-width: 598px) {
@@ -868,6 +903,11 @@ footer h6{
         .secciones{
             display: grid;
             grid-template-columns: 1fr;
+        }
+
+        .seccion2{
+            grid-template-columns: 1fr;
+            height: max-content;
         }
        
     }   
@@ -988,5 +1028,12 @@ footer h6{
 
        .card4 img {
         height: 30%;
+    }
+    .maquinas{
+        padding: 0;
+    }
+    .cartas-servicios{
+        margin-bottom: 30px;
+        border-bottom: #3d4550 1px solid;
     }
     }

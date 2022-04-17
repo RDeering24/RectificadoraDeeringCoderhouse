@@ -8,3 +8,5 @@ ScrollReveal().reveal('.social', { delay: 500 });
 ScrollReveal().reveal('.opciones', { delay: 500 });
 ScrollReveal().reveal('.logos-marca', { delay: 500 });
 ScrollReveal().reveal('footer', { delay: 500 });
+
+
