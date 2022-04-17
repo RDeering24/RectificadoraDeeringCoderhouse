@@ -5,6 +5,7 @@
     
 }
 
+
     /* Navegacion */
     header {
         grid-area: header;
@@ -281,6 +282,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 20px;
+        font-family: 'Robotic',sans-serif;
         
     }
 
@@ -302,6 +304,14 @@
         font-size: 30px;
     }
     
+    .historia_descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+    }
     .historia_descripcion h2 {
         text-align: left;
         padding: 10px;
@@ -398,6 +408,7 @@
       padding: 10px 10px 0;
    }
 
+/*banner quienes_somos*/
 
 .banner{
     grid-area: principal;
@@ -406,7 +417,9 @@
     width: 100%;
 
 }
- 
+/*banner quienes_somos*/
+
+
 .contact{
     display: flex;
     justify-content: center;
@@ -657,6 +670,7 @@ footer{
 
     
     @media (max-width: 992px) {
+       
         .menu-btn {
             display: block;
             
@@ -815,8 +829,6 @@ footer{
     
     @media (max-width: 598px) {
       
-      
-    
         .menu-btn  {
             display: block;
             margin: 0;
